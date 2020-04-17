@@ -39,7 +39,15 @@ print(Int.random(in: 1...3))
 
 print(Int.random(in: 1..<3))
 
+print(Bool.random())
+print(Float.random(in: 1..<3))
 
+//Now randomness with arrays
 
+var arr1 = [1,2,3,4,5,6]
 
-
+print(arr1.randomElement())
+//or
+print(arr1[Int.random(in: 0...5)])
+print("Actual Array is:", arr1)
+print("Shuffled array is:", arr1.shuffled())
